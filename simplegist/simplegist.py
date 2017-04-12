@@ -96,7 +96,7 @@ class Simplegist:
                         response = {
                             'l' : '%s/%s/%s'  % (GIST_URL,self.username,r.json()['id']),
                             'c' : '%s/%s.git' % (GIST_URL,r.json()['id']),
-                            'r' : '%s/%s/%s'  % (GIST_URL, self.username,r.json()['files'][self.gist_name]['raw_url']),
+                            'r' : '%s'  % (r.json()['files'][self.gist_name]['raw_url']),
                             'i' : r.json()['id']
                         }
 
